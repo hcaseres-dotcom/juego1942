@@ -1,0 +1,20 @@
+{
+  "ultimoJugador": "Horacio",
+  "jugadores": [{
+    "partidas": [
+      {
+        "puntuacion": 80,
+        "fechaHora": "2025-10-03 21:23:28",
+        "disparosAcertados": 8,
+        "duracion": "0m 12s"
+      },
+      {
+        "puntuacion": 40,
+        "fechaHora": "2025-10-03 22:17:48",
+        "disparosAcertados": 4,
+        "duracion": "0m 11s"
+      }
+    ],
+    "nombre": "Horacio"
+  }]
+}
