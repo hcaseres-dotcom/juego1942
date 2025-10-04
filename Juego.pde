@@ -8,6 +8,9 @@ class Juego {
   int GAME_OVER = 3;
   int estadoActual;
   
+  PApplet app;
+
+  
   // Objetos del juego
   Nave nave;
   ArrayList<Municion> disparos;
@@ -31,11 +34,12 @@ class Juego {
   boolean inputActivo;
   
   // Constructor
-  Juego() {
+  Juego(PApplet app) {
     estadoActual = MENU;
     nombreJugador = "";
     inputActivo = false;
     inicializarJuego();
+    this.app = app;    
   }
   
   void inicializarJuego() {
@@ -177,10 +181,10 @@ class Juego {
     
     // Guardar partida
     if (nombreJugador.length() > 0) {
-      GestorDatos.guardarPartida(nombreJugador, puntuacion, duracionJuego, disparosAcertados);
+      GestorDatos.guardarPartida(this.app, nombreJugador, puntuacion, duracionJuego, disparosAcertados);
       
       // Mostrar estadísticas en consola
-      GestorDatos.mostrarEstadisticas();
+      GestorDatos.mostrarEstadisticas(this.app);
     }
   }
   
@@ -209,7 +213,7 @@ class Juego {
     text("Ingresa tu nombre:", width/2, height/2 - 80);
     
     // Mostrar último jugador
-    String ultimoJugador = GestorDatos.obtenerUltimoJugador();
+    String ultimoJugador = GestorDatos.obtenerUltimoJugador(this.app);
     if (ultimoJugador.length() > 0) {
       textSize(14);
       fill(200, 200, 200);
@@ -300,14 +304,14 @@ class Juego {
     if (estadoActual == MENU) {
       if (codigo == ENTER) {
         estadoActual = ENTRADA_NOMBRE;
-        nombreJugador = GestorDatos.obtenerUltimoJugador();
+        nombreJugador = GestorDatos.obtenerUltimoJugador(this.app);
       }
     } else if (estadoActual == ENTRADA_NOMBRE) {
       if (codigo == ENTER && nombreJugador.length() > 0) {
         estadoActual = JUGANDO;
         tiempoInicio = millis();
       } else if (codigo == ESC) {
-        String ultimoJugador = GestorDatos.obtenerUltimoJugador();
+        String ultimoJugador = GestorDatos.obtenerUltimoJugador(this.app);
         if (ultimoJugador.length() > 0) {
           nombreJugador = ultimoJugador;
           estadoActual = JUGANDO;
@@ -334,7 +338,7 @@ class Juego {
       if (tecla == 'r' || tecla == 'R') {
         inicializarJuego();
         estadoActual = ENTRADA_NOMBRE;
-        nombreJugador = GestorDatos.obtenerUltimoJugador();
+        nombreJugador = GestorDatos.obtenerUltimoJugador(this.app);
       }
     }
   }

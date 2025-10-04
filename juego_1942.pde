@@ -4,7 +4,7 @@ Juego juego;
 
 void setup() {
   size(800, 600);
-  juego = new Juego();
+  juego = new Juego(this);
 }
 
 void draw() {
