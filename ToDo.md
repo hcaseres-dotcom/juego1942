@@ -50,4 +50,18 @@
 | Ver estadísticas      | Juego, (futura clase Estadisticas o GestorDatos) | Al finalizar la partida, se muestran puntaje final, vidas restantes y otros datos; se pueden guardar en CSV/JSON. |
 | Reiniciar partida     | Juego, Nave, Enemigo, Municion             | El jugador presiona R → Juego.inicializarJuego() crea nuevas instancias y resetea todo. |
 
+# Entregable 14/10 (En google doc) : 
+1) Objetivo y alcance
+2) Descripción de alto nivel del sistema
+3) Requerimientos funcionales más relevantes
+4) Requeriminetos no funcionales
 
+# Entregable 21/10 (En presentación / canva) :
+Seleccionamos CDU's;
+- Nave dispara y mata a un enemigo
+- DEFINIR
+5) Diagrama Conceptual
+6) Diagrama de clases del Modelo
+7) Diagrama de la Vista y Controlador
+8) Diagrama de Secuencia de al menos 2 Casos de Uso Importantes y de alta interacción entre clases
+9) Diagrama de Navegación de GUI ( Mostrar las interfaces de cómo quería el juego) 
