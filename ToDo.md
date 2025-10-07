@@ -51,4 +51,3 @@
 | Reiniciar partida     | Juego, Nave, Enemigo, Municion             | El jugador presiona R → Juego.inicializarJuego() crea nuevas instancias y resetea todo. |
 
 
-## Casos organizados: 
