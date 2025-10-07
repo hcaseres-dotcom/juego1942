@@ -49,3 +49,6 @@
 | Actualizar puntaje    | Juego, Enemigo, Municion                   | Al destruir un enemigo, Juego suma +10 puntos al marcador.                         |
 | Ver estadísticas      | Juego, (futura clase Estadisticas o GestorDatos) | Al finalizar la partida, se muestran puntaje final, vidas restantes y otros datos; se pueden guardar en CSV/JSON. |
 | Reiniciar partida     | Juego, Nave, Enemigo, Municion             | El jugador presiona R → Juego.inicializarJuego() crea nuevas instancias y resetea todo. |
+
+
+## Casos organizados: 
