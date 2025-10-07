@@ -1,20 +1,31 @@
 {
-  "ultimoJugador": "Horacio",
-  "jugadores": [{
-    "partidas": [
-      {
-        "puntuacion": 80,
-        "fechaHora": "2025-10-03 21:23:28",
-        "disparosAcertados": 8,
-        "duracion": "0m 12s"
-      },
-      {
-        "puntuacion": 40,
-        "fechaHora": "2025-10-03 22:17:48",
-        "disparosAcertados": 4,
-        "duracion": "0m 11s"
-      }
-    ],
-    "nombre": "Horacio"
-  }]
+  "ultimoJugador": "Vanessa",
+  "jugadores": [
+    {
+      "partidas": [
+        {
+          "puntuacion": 80,
+          "fechaHora": "2025-10-03 21:23:28",
+          "disparosAcertados": 8,
+          "duracion": "0m 12s"
+        },
+        {
+          "puntuacion": 40,
+          "fechaHora": "2025-10-03 22:17:48",
+          "disparosAcertados": 4,
+          "duracion": "0m 11s"
+        }
+      ],
+      "nombre": "Horacio"
+    },
+    {
+      "partidas": [{
+        "puntuacion": 100,
+        "fechaHora": "2025-10-06 11:39:24",
+        "disparosAcertados": 10,
+        "duracion": "0m 14s"
+      }],
+      "nombre": "Vanessa"
+    }
+  ]
 }
