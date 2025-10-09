@@ -60,6 +60,4 @@ Estas funciones cumplen **Juego principal**, **Módulo de Ciencia de Datos** y *
 **NF-05 Portabilidad (M).** Compila y ejecuta en **Processing 4.x** sin dependencias externas. 
 **NF-06 Presentación/Organización (S).** README de ejecución, diagrama de clases y breve guía de análisis para la defensa. (Alinea con rúbrica de organización/presentación.) 
 
----
 
-Si querés, te lo paso **en .DOCX** con formato (títulos numerados + tabla de trazabilidad RF↔consigna) y lo sumamos al repo.
