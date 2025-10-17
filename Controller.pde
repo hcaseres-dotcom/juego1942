@@ -1,6 +1,6 @@
 // Archivo: Juego.pde
 
-class Juego {
+class Controller {
   // Estados del juego
   int MENU = 0;
   int ENTRADA_NOMBRE = 1;
@@ -35,7 +35,7 @@ class Juego {
   boolean inputActivo;
   
   // Constructor
-  Juego(PApplet app) {
+  Controller(PApplet app) {
     estadoActual = MENU;
     this.menu = new Menu();
     nombreJugador = "";

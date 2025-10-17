@@ -1,10 +1,10 @@
 // Archivo principal: juego_1942.pde
 
-Juego juego;
+Controller juego;
 
 void setup() {
   size(800, 600);
-  juego = new Juego(this);
+  juego = new Controller(this);
 }
 
 void draw() {

@@ -1,5 +1,4 @@
 class Menu extends Pantalla{
-    
 
     void dibujarPantalla(){
         fill(255);
