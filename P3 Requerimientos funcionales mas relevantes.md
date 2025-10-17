@@ -10,7 +10,7 @@ Clasificación según **Must / Should / Could**, todas trazables a los **Requeri
   El sistema gestiona los estados: `MENU`, `CIENCIA_DE_DATOS`,`ENTRADA_NOMBRE`, `JUGANDO`, `GAME_OVER`
 
 - **F-02 Entrada de nombre**  
-  Permite tipear y confirmar el nombre del jugador, reutilizando el último ingresado.
+  Es obligatorio la confirmación del nombre del jugador. También se puede reutilizar el último ingresado.
 
 - **F-03 Control y disparo**  
   Movimiento en 4 sentidos con teclado. Disparo con cadencia limitada.
