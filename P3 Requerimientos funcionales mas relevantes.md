@@ -7,13 +7,13 @@ Clasificación según **Must / Should / Could**, todas trazables a los **Requeri
 ### 🟩 Obligatorias  (Must)
 
 - **F-01 Estados y navegación**  
-  El sistema gestiona los estados: `MENU`, `ENTRADA_NOMBRE`, `JUGANDO`, `GAME_OVER`.
+  El sistema gestiona los estados: `MENU`, `CIENCIA_DE_DATOS`,`ENTRADA_NOMBRE`, `JUGANDO`, `GAME_OVER`
 
 - **F-02 Entrada de nombre**  
   Permite tipear y confirmar el nombre del jugador, reutilizando el último ingresado.
 
 - **F-03 Control y disparo**  
-  Movimiento con teclado y disparo con cadencia limitada.
+  Movimiento en 4 sentidos con teclado. Disparo con cadencia limitada.
 
 - **F-04 Enemigos y niveles**  
   Aparición periódica de enemigos (≥2 tipos) con comportamientos distintos y dificultad creciente.
