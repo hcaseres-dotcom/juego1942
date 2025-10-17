@@ -13,6 +13,7 @@ class Juego {
   
   // Objetos del juego
   Nave nave;
+  Menu menu;
   ArrayList<Municion> disparos;
   ArrayList<Enemigo> enemigos;
   
@@ -36,10 +37,11 @@ class Juego {
   // Constructor
   Juego(PApplet app) {
     estadoActual = MENU;
+    this.menu = new Menu();
     nombreJugador = "";
     inputActivo = false;
     inicializarJuego();
-    this.app = app;    
+    this.app = app;
   }
   
   void inicializarJuego() {
@@ -74,10 +76,10 @@ class Juego {
   
   void dibujar() {
     background(0, 0, 50);
-    
+
     switch(estadoActual) {
       case 0: // MENU
-        dibujarMenu();
+        menu.dibujarPantalla();
         break;
       case 1: // ENTRADA_NOMBRE
         dibujarEntradaNombre();
@@ -190,20 +192,6 @@ class Juego {
   
   void actualizarGameOver() {
     // Lógica del game over
-  }
-  
-  void dibujarMenu() {
-    fill(255);
-    textAlign(CENTER);
-    textSize(32);
-    text("JUEGO 1942", width/2, height/2 - 50);
-    textSize(16);
-    text("Presiona ENTER para comenzar", width/2, height/2 + 50);
-    text("Usa las flechas para moverte", width/2, height/2 + 80);
-    text("Presiona ESPACIO para disparar", width/2, height/2 + 100);
-    textSize(12);
-    fill(150, 150, 150);
-    text("Los datos se guardan en: " + sketchPath("datos_juego.json"), width/2, height - 30);
   }
   
   void dibujarEntradaNombre() {
