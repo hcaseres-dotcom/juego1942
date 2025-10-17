@@ -12,17 +12,14 @@
 ### **Modulo de Ciencia de datos:**
 - registro por partida (tiempo, puntaje, precisión, enemigos derrotados, vidas perdidas, victoria, nivel alcanzado)
 - persistencia (JSON) 
-- Visualización de métricas 
-    - promedio, 
-    - máx
-    - mín
-    - % victorias
+- Visualización de métricas
+-   - Presición de disparos
+    - Cantidad de victorias
+    - Puntuación máxima y minima
     
-` )** y **1 gráfico** (barras/línea) integrado al juego. ¿Se debe incluir?`
-
 ### **POO y calidad:** 
 
-- Diseño orientado a objetos 
+- Diseño orientado a objetos. Diseño del Software basado en principios GRASP y Solid
 - Código funcional y compilable (compile/ejecute correctamente). 
 
 ### **Fuera de alcance ahora (posibles extensiones):** 
