@@ -123,7 +123,7 @@ class Juego {
       if (!enemigo.estaActivo()) {
         enemigos.remove(i);
       } else if (enemigo.llegaAlFinal()) {
-        vidas--;
+        // vidas--;
         enemigos.remove(i);
         if (vidas <= 0) {
           finalizarJuego();
