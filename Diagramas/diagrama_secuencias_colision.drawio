@@ -1,0 +1,172 @@
+<mxfile host="65bd71144e">
+    <diagram id="Tn3IOFCltsfL4i4OhQjH" name="Page-1">
+        <mxGraphModel dx="945" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Diagrama de Secuencia – Escenario: Jugador colisiona con el enemigo&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry y="20" width="440" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Controller" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+                    <mxGeometry x="262" y="70" width="100" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Juego" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+                    <mxGeometry x="110" y="70" width="100" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Nave" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+                    <mxGeometry x="470" y="70" width="100" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Enemigo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+                    <mxGeometry x="590" y="70" width="100" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="GestorDatos" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+                    <mxGeometry x="710" y="70" width="100" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="70" width="20" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="160" y="180" as="sourcePoint"/>
+                        <mxPoint x="312" y="180" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="draw ()" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="actualizarjuego()" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="174" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="312" y="235" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="312" y="245"/>
+                            <mxPoint x="362" y="245"/>
+                            <mxPoint x="362" y="265"/>
+                        </Array>
+                        <mxPoint x="317" y="265" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="verificarColisionesNaveEnemigo ()" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="218" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="&lt;b&gt;loop&lt;/b&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="280" width="580" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;b&gt;alt&lt;/b&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="440" width="555" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="311" y="327" as="sourcePoint"/>
+                        <mxPoint x="520.5" y="327" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="519.5" y="353" as="sourcePoint"/>
+                        <mxPoint x="311.5" y="353" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="317" y="413" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="312" y="413"/>
+                            <mxPoint x="362" y="413"/>
+                            <mxPoint x="362" y="428"/>
+                        </Array>
+                        <mxPoint x="317" y="428" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="312" y="363" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="312" y="378"/>
+                            <mxPoint x="362" y="378"/>
+                            <mxPoint x="362" y="393"/>
+                        </Array>
+                        <mxPoint x="317" y="393" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;b&gt;[para cada enemigo]&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="316" y="275" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="colisionaCon(Enemigo)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="334" y="302" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="true (Colisión)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="304" y="325" width="118" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="vidas--" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="354" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="finalizarJuego()" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="467" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="OK" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="548" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="guardarPartida ()" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="313" y="510.5" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="eliminar enemigo" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="313" y="390" width="98" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;b&gt;[vidas &amp;lt;= 0]&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="296" y="436" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="317" y="493" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="312" y="493"/>
+                            <mxPoint x="362" y="493"/>
+                            <mxPoint x="362" y="508"/>
+                        </Array>
+                        <mxPoint x="317" y="508" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="312" y="543" as="sourcePoint"/>
+                        <mxPoint x="761.5" y="543" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="759.5" y="575" as="sourcePoint"/>
+                        <mxPoint x="313" y="575" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="" style="shape=link;html=1;" parent="1" source="14" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="300" y="141" as="sourcePoint"/>
+                        <mxPoint x="840" y="141" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" value="Verificación de colisión" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="342" y="123" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="311" y="189" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="311" y="199"/>
+                            <mxPoint x="361" y="199"/>
+                            <mxPoint x="361" y="219"/>
+                        </Array>
+                        <mxPoint x="316" y="219" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
