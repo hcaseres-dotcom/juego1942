@@ -1,5 +1,5 @@
 {
-  "ultimoJugador": "Vanessa",
+  "ultimoJugador": "Tito",
   "jugadores": [
     {
       "partidas": [
@@ -40,6 +40,15 @@
         }
       ],
       "nombre": "Vanessa"
+    },
+    {
+      "partidas": [{
+        "puntuacion": 40,
+        "fechaHora": "2025-10-21 10:07:15",
+        "disparosAcertados": 4,
+        "duracion": "0m 9s"
+      }],
+      "nombre": "Tito"
     }
   ]
 }
