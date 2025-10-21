@@ -23,7 +23,7 @@ Clasificación según **Must / Should / Could**, todas trazables a los **Requeri
   - Nave ↔ Enemigo: resta vidas  
   - Condiciones de victoria/derrota
 
-- **F-06 HUD**  
+- **F-06 HUD(Heads-Up Display)**  
   Muestra jugador, puntaje, vidas, aciertos y tiempo.
 
 - **F-07 Persistencia**  
@@ -46,7 +46,7 @@ Clasificación según **Must / Should / Could**, todas trazables a los **Requeri
 - **F-10 Dificultad dinámica**  
   Ajuste automático según el rendimiento del jugador.
 
-- **F-11 Exportación CSV**  
+- **F-11 Exportación JSON**  
   Opción para exportar el histórico completo para análisis externo.
 
 ---
