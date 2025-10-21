@@ -1,5 +1,5 @@
 {
-  "ultimoJugador": "Tito",
+  "ultimoJugador": "Tito ",
   "jugadores": [
     {
       "partidas": [
@@ -49,6 +49,15 @@
         "duracion": "0m 9s"
       }],
       "nombre": "Tito"
+    },
+    {
+      "partidas": [{
+        "puntuacion": 10,
+        "fechaHora": "2025-10-21 17:44:12",
+        "disparosAcertados": 1,
+        "duracion": "0m 5s"
+      }],
+      "nombre": "Tito "
     }
   ]
 }

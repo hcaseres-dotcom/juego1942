@@ -1,6 +1,6 @@
-class Menu extends Pantalla{
+class MenuView extends View{
 
-    void dibujarPantalla(){
+    void dibujarView(){
         fill(255);
         textAlign(CENTER);
         textSize(32);

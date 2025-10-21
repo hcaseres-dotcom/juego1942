@@ -1,4 +1,4 @@
-// Archivo: Juego.pde
+// Archivo: Controller.pde
 
 class Controller {
   // Estados del juego
@@ -10,10 +10,13 @@ class Controller {
   
   PApplet app;
 
-  
   // Objetos del juego
   Nave nave;
-  Menu menu;
+  MenuView menuView;
+  NombreInputView nombreInputView;
+  GameView gameView;
+  GameOverView gameOverView;
+
   ArrayList<Municion> disparos;
   ArrayList<Enemigo> enemigos;
   
@@ -37,7 +40,11 @@ class Controller {
   // Constructor
   Controller(PApplet app) {
     estadoActual = MENU;
-    this.menu = new Menu();
+    this.menuView = new MenuView();
+    this.nombreInputView = new NombreInputView();
+    this.gameView = new GameView();
+    this.gameOverView = new GameOverView();
+
     nombreJugador = "";
     inputActivo = false;
     inicializarJuego();
@@ -79,16 +86,16 @@ class Controller {
 
     switch(estadoActual) {
       case 0: // MENU
-        menu.dibujarPantalla();
+        menuView.dibujarView();
         break;
       case 1: // ENTRADA_NOMBRE
-        dibujarEntradaNombre();
+        nombreInputView.dibujarView(this.app, nombreJugador);
         break;
       case 2: // JUGANDO
-        dibujarJuego();
+        gameView.dibujarView(nave, disparos, enemigos, nombreJugador, puntuacion, vidas, disparosAcertados, tiempoInicio);
         break;
       case 3: // GAME_OVER
-        dibujarGameOver();
+        gameOverView.dibujarView(nombreJugador, puntuacion, disparosAcertados, duracionJuego);
         break;
     }
   }
@@ -192,100 +199,6 @@ class Controller {
   
   void actualizarGameOver() {
     // Lógica del game over
-  }
-  
-  void dibujarEntradaNombre() {
-    fill(255);
-    textAlign(CENTER);
-    textSize(24);
-    text("Ingresa tu nombre:", width/2, height/2 - 80);
-    
-    // Mostrar último jugador
-    String ultimoJugador = GestorDatos.obtenerUltimoJugador(this.app);
-    if (ultimoJugador.length() > 0) {
-      textSize(14);
-      fill(200, 200, 200);
-      text("Último jugador: " + ultimoJugador, width/2, height/2 - 50);
-    }
-    
-    // Campo de texto simulado
-    fill(255);
-    textSize(32);
-    text(nombreJugador + "_", width/2, height/2);
-    
-    textSize(14);
-    fill(150, 150, 150);
-    text("Presiona ENTER para continuar", width/2, height/2 + 50);
-    if (ultimoJugador.length() > 0) {
-      text("Presiona ESC para usar último jugador", width/2, height/2 + 70);
-    }
-  }
-  
-  void dibujarJuego() {
-    dibujarEstrellas();
-    
-    nave.dibujar();
-    
-    for (Municion disparo : disparos) {
-      disparo.dibujar();
-    }
-    
-    for (Enemigo enemigo : enemigos) {
-      enemigo.dibujar();
-    }
-    
-    dibujarHUD();
-  }
-  
-  void dibujarEstrellas() {
-    fill(255);
-    for (int i = 0; i < 50; i++) {
-      float x = (frameCount * 2 + i * 37) % width;
-      float y = (frameCount * 1 + i * 23) % height;
-      ellipse(x, y, 1, 1);
-    }
-  }
-  
-  void dibujarHUD() {
-    fill(255);
-    textAlign(LEFT);
-    textSize(16);
-    text("Jugador: " + nombreJugador, 10, 30);
-    text("Puntuación: " + puntuacion, 10, 50);
-    text("Vidas: " + vidas, 10, 70);
-    text("Disparos acertados: " + disparosAcertados, 10, 90);
-    
-    // Tiempo transcurrido
-    int duracionMs = millis() - tiempoInicio;
-    int minutos = duracionMs / 60000;
-    int segundos = (duracionMs % 60000) / 1000;
-    text("Tiempo: " + minutos + "m " + segundos + "s", 10, 110);
-  }
-  
-  void dibujarGameOver() {
-    fill(255, 0, 0);
-    textAlign(CENTER);
-    textSize(32);
-    text("GAME OVER", width/2, height/2 - 120);
-    
-    fill(255);
-    textSize(18);
-    text("Jugador: " + nombreJugador, width/2, height/2 - 70);
-    text("Puntuación Final: " + puntuacion, width/2, height/2 - 40);
-    text("Disparos acertados: " + disparosAcertados, width/2, height/2 - 10);
-    text("Duración: " + duracionJuego, width/2, height/2 + 20);
-    
-    textSize(16);
-    fill(0, 255, 0);
-    text("✓ Datos guardados correctamente", width/2, height/2 + 60);
-    
-    textSize(14);
-    fill(255);
-    text("Presiona R para jugar de nuevo", width/2, height/2 + 100);
-    
-    textSize(12);
-    fill(150, 150, 150);
-    text("Archivo: " + sketchPath("datos_juego.json"), width/2, height - 30);
   }
   
   void manejarTeclaPresionada(char tecla, int codigo) {
