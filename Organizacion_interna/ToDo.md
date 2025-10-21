@@ -64,4 +64,5 @@ Seleccionamos CDU's;
 6) Diagrama de clases del Modelo
 7) Diagrama de la Vista y Controlador
 8) Diagrama de Secuencia de al menos 2 Casos de Uso Importantes y de alta interacción entre clases
-9) Diagrama de Navegación de GUI ( Mostrar las interfaces de cómo quería el juego) 
+9) Diagrama de Navegación de GUI ( Mostrar las interfaces de cómo quería el juego) [Editable GUI](https://www.canva.com/design/DAG2bU6c2Q8/hutLRFuCYdpB2phnTDgM1A/edit)
+
