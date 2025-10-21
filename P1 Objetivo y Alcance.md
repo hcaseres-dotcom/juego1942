@@ -2,7 +2,7 @@
 
 **Objetivo.** Construir un videojuego 2D en Processing (Java), inspirado en *1942*, aplicando **POO** (herencia, interfaces, polimorfismo) y sumando un **módulo de análisis de datos** con persistencia y visualización simple. 
 
-## *Alcance (MVP de esta entrega).**
+## *Alcance (MVP -Minimum Viable Product- de esta entrega).**
 
 ### **Juego principal:**
 - 1 jugador controlable-
@@ -19,7 +19,7 @@
     
 ### **POO y calidad:** 
 
-- Diseño orientado a objetos. Diseño del Software basado en principios GRASP y Solid
+- Diseño orientado a objetos. Diseño del Software basado en principios GRASP (General Responsibility Assignment Software Patterns) y Solid
 - Código funcional y compilable (compile/ejecute correctamente). 
 
 ### **Fuera de alcance ahora (posibles extensiones):** 
