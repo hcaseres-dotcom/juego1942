@@ -1,7 +1,7 @@
 ## ⚙️ Requerimientos No Funcionales
 
 - **NF-00 Usabilidad (O)**  
-  El juego tiene una interfaz de Menu intuitiva y facil de manejar para nuevos jugadores. Además, debe presentar instrucciones. 
+> `El juego tiene una interfaz de Menu intuitiva y facil de manejar para nuevos jugadores. Además, debe presentar instrucciones.`
 
 - **NF-01 Extensibilidad (O)**  
   El juego cuenta con un diseño modular que permita agregar enemigos, niveles y métricas sin romper interfaces (`Enemigo`, `Strategy` de dificultad).
@@ -10,7 +10,7 @@
   El juego permite una separación clara entre renderizado, lógica y datos. Nombres descriptivos, sin duplicación, con comentarios/Javadoc básicos.
 
 - **NF-03 Gestión de errores (O)**  
-  El juego otorga un manejo robusto de archivos: si no existen o están corruptos, se recrea una estructura mínima. El juego nunca debe fallar. Se recomienda jerarquía simple de excepciones en Java puro.
+ **El juego otorga un manejo robusto de archivos: si no existen o están corruptos, se recrea una estructura mínima. El juego nunca debe fallar. Se recomienda jerarquía simple de excepciones en Java puro.**
 
 - **NF-04 Portabilidad (O)**  
   El juego debe compilar y ejecutarse en **Processing 4.x** sin dependencias externas.
