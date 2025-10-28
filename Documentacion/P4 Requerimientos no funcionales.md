@@ -1,8 +1,5 @@
 ## ⚙️ Requerimientos No Funcionales
 
-- **NF-00 Usabilidad (O)**  
-> `El juego tiene una interfaz de Menu intuitiva y facil de manejar para nuevos jugadores. Además, debe presentar instrucciones.`
-
 - **NF-01 Extensibilidad (O)**  
   El juego cuenta con un diseño modular que permita agregar enemigos, niveles y métricas sin romper interfaces (`Enemigo`, `Strategy` de dificultad).
 
