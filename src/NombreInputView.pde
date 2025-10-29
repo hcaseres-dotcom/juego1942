@@ -1,29 +1,64 @@
-class NombreInputView extends View{
+// Archivo: NombreInputView.pde
 
-    void dibujarView(PApplet app, String nombreJugador){
-        fill(255);
-        textAlign(CENTER);
-        textSize(24);
-        text("Ingresa tu nombre:", width/2, height/2 - 80);
-        
-        // Mostrar último jugador
-        String ultimoJugador = GestorDatos.obtenerUltimoJugador(app);
-        if (ultimoJugador.length() > 0) {
-        textSize(14);
-        fill(200, 200, 200);
-        text("Último jugador: " + ultimoJugador, width/2, height/2 - 50);
-        }
-        
-        // Campo de texto simulado
-        fill(255);
-        textSize(32);
-        text(nombreJugador + "_", width/2, height/2);
-        
-        textSize(14);
-        fill(150, 150, 150);
-        text("Presiona ENTER para continuar", width/2, height/2 + 50);
-        if (ultimoJugador.length() > 0) {
-        text("Presiona ESC para usar último jugador", width/2, height/2 + 70);
-        }
+class NombreInputView extends View {
+  Controller controller;
+  GameData data;
+
+  NombreInputView(PApplet app, Controller controller, GameData data) {
+    super(app);
+    this.controller = controller;
+    this.data = data;
+  }
+
+  @Override
+  void dibujar() {
+    app.fill(255);
+    app.textAlign(CENTER);
+    app.textSize(24);
+    app.text("Ingresa tu nombre:", app.width / 2, app.height / 2 - 80);
+
+    String ultimoJugador = GestorDatos.obtenerUltimoJugador(app);
+    if (ultimoJugador.length() > 0) {
+      app.textSize(14);
+      app.fill(200, 200, 200);
+      app.text("Último jugador: " + ultimoJugador, app.width / 2, app.height / 2 - 50);
+    }
+
+    app.fill(255);
+    app.textSize(32);
+    app.text(data.nombreJugador + "_", app.width / 2, app.height / 2);
+
+    app.textSize(14);
+    app.fill(150, 150, 150);
+    app.text("Presiona ENTER para continuar", app.width / 2, app.height / 2 + 50);
+    if (ultimoJugador.length() > 0) {
+      app.text("Presiona ESC para usar último jugador", app.width / 2, app.height / 2 + 70);
+    }
+  }
+
+  @Override
+  void keyPressed(char key, int keyCode) {
+    String ultimoJugador = GestorDatos.obtenerUltimoJugador(app);
+
+    if (keyCode == ENTER) {
+      if (data.nombreJugador.length() > 0) {
+        controller.cambiarEstado("juego");
+      }
+    } 
+    else if (keyCode == ESC) {
+      app.key = 0;
+      if (ultimoJugador.length() > 0) {
+        data.nombreJugador = ultimoJugador;
+        controller.cambiarEstado("juego");
+      }
+    } 
+    else if (keyCode == BACKSPACE) {
+      if (data.nombreJugador.length() > 0) {
+        data.nombreJugador = data.nombreJugador.substring(0, data.nombreJugador.length() - 1);
+      }
+    } 
+    else if (key >= 32 && key <= 126 && data.nombreJugador.length() < 20) {
+      data.nombreJugador += key;
+    }
   }
 }

@@ -1,23 +1,23 @@
 // Archivo principal: juego_1942.pde
 
-Controller juego;
+Controller controller;
 
 void setup() {
   size(800, 600);
-  juego = new Controller(this);
+  controller = new Controller(this);
 }
 
 void draw() {
-  juego.actualizar();
-  juego.dibujar();
+  controller.actualizar();
+  controller.dibujar();
 }
 
 // Captura de eventos del teclado
 void keyPressed() {
-  juego.manejarTeclaPresionada(key, keyCode);
+  controller.manejarTeclaPresionada(key, keyCode);
 }
 
 void keyReleased() {
-  juego.manejarTeclaSoltada(key, keyCode);
+  controller.manejarTeclaSoltada(key, keyCode);
 }
   
