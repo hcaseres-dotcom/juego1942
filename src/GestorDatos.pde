@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 static class GestorDatos {
   
   static JSONObject cargarDatos(PApplet app) {
-    // File archivo = new File(sketchPath("datos_juego.json"));
     File archivo = new File(app.sketchPath("datos_juego.json"));
     
     if (archivo.exists()) {
