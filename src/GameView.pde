@@ -62,7 +62,7 @@ class GameView extends View {
       if (!enemigo.estaActivo()) {
         enemigos.remove(i);
       } else if (enemigo.llegaAlFinal()) {
-        data.vidas--;
+        //data.vidas--;
         enemigos.remove(i);
         if (data.vidas <= 0) {
           int duracionMs = app.millis() - data.tiempoInicio;
