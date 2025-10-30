@@ -1,5 +1,5 @@
 {
-  "ultimoJugador": "Asd",
+  "ultimoJugador": "Hernan",
   "jugadores": [
     {
       "partidas": [
@@ -137,6 +137,15 @@
         "duracion": "0m 42s"
       }],
       "nombre": "Asd"
+    },
+    {
+      "partidas": [{
+        "puntuacion": 90,
+        "fechaHora": "2025-10-30 20:40:56",
+        "disparosAcertados": 9,
+        "duracion": "0m 16s"
+      }],
+      "nombre": "Hernan"
     }
   ]
 }

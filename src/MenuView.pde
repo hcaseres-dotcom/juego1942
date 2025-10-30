@@ -62,7 +62,7 @@ class MenuView extends View {
 			controller.cambiarEstado("instrucciones");
 		}
 		else if (key == '4') {
-			//controller.cambiarEstado("estadisticas");
+			controller.cambiarEstado("estadisticas");
 		}
 	}
 }

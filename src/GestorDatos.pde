@@ -120,4 +120,48 @@ static class GestorDatos {
     }
     println("\n=============================\n");
   }
+
+  static String obtenerEstadisticas(PApplet app) {
+    JSONObject datos = cargarDatos(app);
+    JSONArray jugadores = datos.getJSONArray("jugadores");
+    
+    StringBuilder estadisticas = new StringBuilder();
+    estadisticas.append("Total de jugadores: ").append(jugadores.size()).append("\n\n");
+    
+    for (int i = 0; i < jugadores.size(); i++) {
+      JSONObject jugador = jugadores.getJSONObject(i);
+      String nombre = jugador.getString("nombre");
+      JSONArray partidas = jugador.getJSONArray("partidas");
+      
+      int totalPartidas = partidas.size();
+      int totalPuntos = 0;
+      int totalDisparos = 0;
+      
+      for (int j = 0; j < partidas.size(); j++) {
+        JSONObject partida = partidas.getJSONObject(j);
+        totalPuntos += partida.getInt("puntuacion");
+        totalDisparos += partida.getInt("disparosAcertados");
+      }
+      
+      estadisticas.append("Jugador: ").append(nombre).append("\n");
+      estadisticas.append("  Partidas jugadas: ").append(totalPartidas).append("\n");
+      estadisticas.append("  Puntos totales: ").append(totalPuntos).append("\n");
+      estadisticas.append("  Disparos acertados totales: ").append(totalDisparos).append("\n");
+      
+      if (totalPartidas > 0) {
+        estadisticas.append("  Promedio puntos: ").append(totalPuntos / totalPartidas).append("\n");
+        estadisticas.append("  Promedio disparos: ").append(totalDisparos / totalPartidas).append("\n");
+        
+        // Mostrar �ltima partida
+        JSONObject ultimaPartida = partidas.getJSONObject(partidas.size() - 1);
+        estadisticas.append("  �ltima partida:\n");
+        estadisticas.append("    Fecha: ").append(ultimaPartida.getString("fechaHora")).append("\n");
+        estadisticas.append("    Puntos: ").append(ultimaPartida.getInt("puntuacion")).append("\n");
+        estadisticas.append("    Duraci�n: ").append(ultimaPartida.getString("duracion")).append("\n");
+      }
+      estadisticas.append("\n");
+    }
+    
+    return estadisticas.toString();
+  }
 }
