@@ -148,7 +148,10 @@ class GameView extends View {
 
   @Override
   void keyPressed(char key, int keyCode) {
-    if (key == ' ' && app.millis() - tiempoUltimoDisparo > intervaloDisparos) {
+    if (key == 'p' || key == 'P' || keyCode == ENTER) {
+		controller.cambiarEstado("pausa");
+	} 
+	else if (key == ' ' && app.millis() - tiempoUltimoDisparo > intervaloDisparos) {
       disparos.add(nave.disparar());
       tiempoUltimoDisparo = app.millis();
     } else {

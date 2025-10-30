@@ -14,6 +14,9 @@ class Controller {
     vistas.put("nombre", new NombreInputView(app, this, gameData));
     vistas.put("juego", new GameView(app, this, gameData));
     vistas.put("gameover", new GameOverView(app, this, gameData));
+    vistas.put("instrucciones", new InstruccionesView(app, this));
+    vistas.put("pausa", new PausaView(app, this));
+    vistas.put("estadisticas", new EstadisticasView(app, this));
 
     cambiarEstado("menu");
   }
