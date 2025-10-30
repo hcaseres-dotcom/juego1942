@@ -59,7 +59,7 @@ class MenuView extends View {
 			app.exit();
 		}
 		else if (key == '3') {
-			//controller.cambiarEstado("instrucciones");
+			controller.cambiarEstado("instrucciones");
 		}
 		else if (key == '4') {
 			//controller.cambiarEstado("estadisticas");
