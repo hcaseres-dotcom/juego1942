@@ -1,5 +1,5 @@
 {
-  "ultimoJugador": "Guidoooo",
+  "ultimoJugador": "asd",
   "jugadores": [
     {
       "partidas": [
@@ -84,6 +84,50 @@
         "duracion": "0m 9s"
       }],
       "nombre": "Guidoooo"
+    },
+    {
+      "partidas": [{
+        "puntuacion": 50,
+        "fechaHora": "2025-10-30 19:08:02",
+        "disparosAcertados": 5,
+        "duracion": "0m 10s"
+      }],
+      "nombre": "Pepe"
+    },
+    {
+      "partidas": [
+        {
+          "puntuacion": 30,
+          "fechaHora": "2025-10-30 19:20:08",
+          "disparosAcertados": 3,
+          "duracion": "0m 7s"
+        },
+        {
+          "puntuacion": 70,
+          "fechaHora": "2025-10-30 19:20:26",
+          "disparosAcertados": 7,
+          "duracion": "0m 11s"
+        },
+        {
+          "puntuacion": 40,
+          "fechaHora": "2025-10-30 19:20:41",
+          "disparosAcertados": 4,
+          "duracion": "0m 10s"
+        },
+        {
+          "puntuacion": 0,
+          "fechaHora": "2025-10-30 19:21:34",
+          "disparosAcertados": 0,
+          "duracion": "0m 7s"
+        },
+        {
+          "puntuacion": 320,
+          "fechaHora": "2025-10-30 19:23:57",
+          "disparosAcertados": 32,
+          "duracion": "0m 48s"
+        }
+      ],
+      "nombre": "asd"
     }
   ]
 }
