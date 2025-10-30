@@ -52,5 +52,17 @@ class MenuView extends View {
 		if (keyCode == ENTER) {
 			controller.cambiarEstado("nombre");
 		}
+		else if (key == '1') {
+			controller.cambiarEstado("nombre");
+		}
+		else if (key == '2') {
+			app.exit();
+		}
+		else if (key == '3') {
+			controller.cambiarEstado("instrucciones");
+		}
+		else if (key == '4') {
+			controller.cambiarEstado("estadisticas");
+		}
 	}
 }
