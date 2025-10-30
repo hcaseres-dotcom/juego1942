@@ -1,7 +1,5 @@
 class InstruccionesView extends View {
-    
     PFont fuenteRetro;
-    
     Controller controller;
     
     InstruccionesView(PApplet app, Controller controller) {
