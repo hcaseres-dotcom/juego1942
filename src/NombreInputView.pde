@@ -45,25 +45,34 @@ class NombreInputView extends View {
 	void keyPressed(char key, int keyCode) {
 		String ultimoJugador = GestorDatos.obtenerUltimoJugador(app);
 
-		if (keyCode == ENTER) {
-		if (data.nombreJugador.length() > 0) {
-			controller.cambiarEstado("juego");
+		if (key == '1') {
+			if (data.nombreJugador.length() > 0) {
+				controller.cambiarEstado("juego");
+			}
+		} 
+		else if (key == '2') {
+			app.key = 0;
+			controller.cambiarEstado("menu");
 		}
+		else if (keyCode == ENTER) {
+			if (data.nombreJugador.length() > 0) {
+				controller.cambiarEstado("juego");
+			}
 		} 
 		else if (keyCode == ESC) {
-		app.key = 0;
-		if (ultimoJugador.length() > 0) {
-			data.nombreJugador = ultimoJugador;
-			controller.cambiarEstado("juego");
-		}
+			app.key = 0;
+			if (ultimoJugador.length() > 0) {
+				data.nombreJugador = ultimoJugador;
+				controller.cambiarEstado("juego");
+			}
 		} 
 		else if (keyCode == BACKSPACE) {
-		if (data.nombreJugador.length() > 0) {
-			data.nombreJugador = data.nombreJugador.substring(0, data.nombreJugador.length() - 1);
-		}
+			if (data.nombreJugador.length() > 0) {
+				data.nombreJugador = data.nombreJugador.substring(0, data.nombreJugador.length() - 1);
+			}
 		} 
 		else if (key >= 32 && key <= 126 && data.nombreJugador.length() < 20) {
-		data.nombreJugador += key;
+			data.nombreJugador += key;
 		}
 	}
 }
