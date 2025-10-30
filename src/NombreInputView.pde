@@ -39,34 +39,6 @@ class NombreInputView extends View {
        		app.image(logoflechablanca, app.width/2-30, app.height/2 +90, 100, 100);
         }
 		app.text("2 VOLVER", app.width/2-70, app.height/2 + 100);
-
-		
-		/*
-		
-		app.fill(255);
-		app.textAlign(CENTER);
-		app.textSize(24);
-		app.text("Ingresa tu nombre:", app.width / 2, app.height / 2 - 80);
-
-		String ultimoJugador = GestorDatos.obtenerUltimoJugador(app);
-		if (ultimoJugador.length() > 0) {
-		app.textSize(14);
-		app.fill(200, 200, 200);
-		app.text("Último jugador: " + ultimoJugador, app.width / 2, app.height / 2 - 50);
-		}
-
-		app.fill(255);
-		app.textSize(32);
-		app.text(data.nombreJugador + "_", app.width / 2, app.height / 2);
-
-		app.textSize(14);
-		app.fill(150, 150, 150);
-		app.text("Presiona ENTER para continuar", app.width / 2, app.height / 2 + 50);
-		if (ultimoJugador.length() > 0) {
-		app.text("Presiona ESC para usar último jugador", app.width / 2, app.height / 2 + 70);
-		}
-		*/
-
 	}
 
 	@Override
