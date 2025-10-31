@@ -10,6 +10,7 @@ class Controller {
     this.gameData = new GameData();
     this.vistas = new HashMap<String, View>();
 
+    // TO DO: Podriamos implementar estas vistas como enum
     vistas.put("menu", new MenuView(app, this));
     vistas.put("nombre", new NombreInputView(app, this, gameData));
     vistas.put("juego", new GameView(app, this, gameData));

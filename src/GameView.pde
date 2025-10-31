@@ -12,7 +12,7 @@ class GameView extends View {
   int tiempoUltimoEnemigo;
   int tiempoUltimoDisparo;
 
-  int intervaloEnemigos = 1000;
+  int intervaloEnemigos = 1000;  // TO DO: Ajustar dificultad a lo largo del tiempo, lo mismo con la velocidad de los enemigos
   int intervaloDisparos = 200;
 
   GameView(PApplet app, Controller controller, GameData data) {
@@ -154,7 +154,7 @@ class GameView extends View {
 	} 
 	else if (key == ' ' && app.millis() - tiempoUltimoDisparo > intervaloDisparos) {
       disparos.add(nave.disparar());
-	  data.disparosTotales++;
+	    data.disparosTotales++;
       tiempoUltimoDisparo = app.millis();
     } else {
       nave.establecerMovimiento(keyCode, true);
