@@ -1,5 +1,5 @@
 {
-  "ultimoJugador": "Hernan",
+  "ultimoJugador": "Prueba",
   "jugadores": [
     {
       "partidas": [
@@ -146,6 +146,47 @@
         "duracion": "0m 16s"
       }],
       "nombre": "Hernan"
+    },
+    {
+      "partidas": [
+        {
+          "puntuacion": 660,
+          "fechaHora": "2025-10-30 22:10:16",
+          "disparosAcertados": 66,
+          "duracion": "1m 25s"
+        },
+        {
+          "puntuacion": 40,
+          "fechaHora": "2025-10-30 22:11:07",
+          "disparosAcertados": 4,
+          "duracion": "0m 9s"
+        },
+        {
+          "puntuacion": 10,
+          "fechaHora": "2025-10-30 22:11:49",
+          "disparosAcertados": 1,
+          "duracion": "0m 7s"
+        },
+        {
+          "puntuacion": 0,
+          "fechaHora": "2025-10-30 22:12:23",
+          "disparosAcertados": 0,
+          "duracion": "0m 4s"
+        },
+        {
+          "puntuacion": 0,
+          "fechaHora": "2025-10-30 22:13:04",
+          "disparosAcertados": 0,
+          "duracion": "0m 3s"
+        },
+        {
+          "puntuacion": 30,
+          "fechaHora": "2025-10-30 22:13:21",
+          "disparosAcertados": 3,
+          "duracion": "0m 10s"
+        }
+      ],
+      "nombre": "Prueba"
     }
   ]
 }

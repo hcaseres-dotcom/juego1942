@@ -139,7 +139,7 @@ class GameView extends View {
     app.text("Jugador: " + data.nombreJugador, 10, 30);
     app.text("Score:   " + data.puntuacion, 10, 50);
     app.text("Vidas:   " + data.vidas, 10, 70);
-    app.text("Disparos:" + data.disparosAcertados, 10, 90);
+    app.text("Disparos:" + data.disparosAcertados + "/" + data.disparosTotales, 10, 90);
 
     int duracionMs = app.millis() - data.tiempoInicio;
     int minutos = duracionMs / 60000;
@@ -154,6 +154,7 @@ class GameView extends View {
 	} 
 	else if (key == ' ' && app.millis() - tiempoUltimoDisparo > intervaloDisparos) {
       disparos.add(nave.disparar());
+	  data.disparosTotales++;
       tiempoUltimoDisparo = app.millis();
     } else {
       nave.establecerMovimiento(keyCode, true);

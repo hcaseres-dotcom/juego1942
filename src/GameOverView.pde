@@ -33,15 +33,16 @@ class GameOverView extends View {
     app.text("Jugador: " + data.nombreJugador, app.width / 2, app.height / 2 - 70);
     app.text("Puntuación Final: " + data.puntuacion, app.width / 2, app.height / 2 - 40);
     app.text("Disparos acertados: " + data.disparosAcertados, app.width / 2, app.height / 2 - 10);
-    app.text("Duración: " + data.duracionJuego, app.width / 2, app.height / 2 + 20);
+    app.text("Disparos totales: " + data.disparosTotales, app.width / 2, app.height / 2 + 20);
+    app.text("Duración: " + data.duracionJuego, app.width / 2, app.height / 2 + 50);
 
     app.textSize(16);
     app.fill(0, 255, 0);
-    app.text("✓ Datos guardados correctamente", app.width / 2, app.height / 2 + 60);
+    app.text("✓ Datos guardados correctamente", app.width / 2, app.height / 2 + 80);
 
     app.textSize(14);
     app.fill(255);
-    app.text("Presiona R para jugar de nuevo", app.width / 2, app.height / 2 + 100);
+    app.text("Presiona R para jugar de nuevo", app.width / 2, app.height / 2 + 110);
 
     app.textSize(12);
     app.fill(150, 150, 150);
