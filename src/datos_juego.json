@@ -184,9 +184,98 @@
           "fechaHora": "2025-10-30 22:13:21",
           "disparosAcertados": 3,
           "duracion": "0m 10s"
+        },
+        {
+          "puntuacion": 0,
+          "fechaHora": "2025-10-31 12:52:16",
+          "disparosAcertados": 0,
+          "duracion": "0m 2s"
+        },
+        {
+          "puntuacion": 130,
+          "fechaHora": "2025-10-31 12:52:46",
+          "disparosAcertados": 13,
+          "duracion": "0m 26s"
+        },
+        {
+          "puntuacion": 120,
+          "fechaHora": "2025-10-31 12:53:19",
+          "disparosAcertados": 12,
+          "duracion": "0m 29s"
+        },
+        {
+          "puntuacion": 130,
+          "fechaHora": "2025-10-31 12:55:30",
+          "disparosAcertados": 13,
+          "duracion": "1m 0s"
+        },
+        {
+          "puntuacion": 40,
+          "fechaHora": "2025-10-31 12:55:40",
+          "disparosAcertados": 4,
+          "duracion": "0m 8s"
+        },
+        {
+          "puntuacion": 90,
+          "fechaHora": "2025-10-31 12:56:34",
+          "disparosAcertados": 9,
+          "duracion": "0m 18s"
+        },
+        {
+          "puntuacion": 10,
+          "fechaHora": "2025-10-31 13:01:44",
+          "disparosAcertados": 1,
+          "duracion": "0m 6s"
+        },
+        {
+          "puntuacion": 10,
+          "fechaHora": "2025-10-31 13:01:52",
+          "disparosAcertados": 1,
+          "duracion": "0m 6s"
+        },
+        {
+          "puntuacion": 20,
+          "fechaHora": "2025-10-31 13:02:05",
+          "disparosAcertados": 2,
+          "duracion": "0m 10s"
+        },
+        {
+          "puntuacion": 20,
+          "fechaHora": "2025-10-31 13:02:18",
+          "disparosAcertados": 2,
+          "duracion": "0m 11s"
+        },
+        {
+          "puntuacion": 0,
+          "fechaHora": "2025-10-31 13:02:25",
+          "disparosAcertados": 0,
+          "duracion": "0m 5s"
+        },
+        {
+          "puntuacion": 20,
+          "fechaHora": "2025-10-31 13:02:37",
+          "disparosAcertados": 2,
+          "duracion": "0m 10s"
         }
       ],
       "nombre": "Prueba"
+    },
+    {
+      "partidas": [
+        {
+          "puntuacion": 190,
+          "fechaHora": "2025-10-31 13:01:28",
+          "disparosAcertados": 19,
+          "duracion": "1m 14s"
+        },
+        {
+          "puntuacion": 0,
+          "fechaHora": "2025-10-31 13:01:34",
+          "disparosAcertados": 0,
+          "duracion": "0m 2s"
+        }
+      ],
+      "nombre": "Prueab"
     }
   ]
 }

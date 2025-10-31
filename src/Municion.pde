@@ -46,6 +46,15 @@ class Municion {
             y < enemigo.y + enemigo.alto &&
             y + alto > enemigo.y);
   }
+
+  // Verificar colisión con nave
+  boolean colisionaCon(Nave nave) {
+    if (!activa) return false;
+    return (x < nave.x + nave.ancho &&
+            x + ancho > nave.x &&
+            y < nave.y + nave.alto &&
+            y + alto > nave.y);
+  }
   
   void desactivar() {
     activa = false;
