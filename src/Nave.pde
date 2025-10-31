@@ -27,7 +27,7 @@ class Nave {
     if (moverDerecha && x < width - ancho) {
       x += velocidad;
     }
-    if (moverArriba && y > height/2) {  // Limitar movimiento hacia arriba
+    if (moverArriba && y > 0) {
       y -= velocidad;
     }
     if (moverAbajo && y < height - alto) {
