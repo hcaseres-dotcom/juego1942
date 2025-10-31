@@ -132,18 +132,19 @@ class GameView extends View {
   }
 
   void dibujarHUD() {
-    app.fill(255);
-    app.textAlign(LEFT);
+    //app.fill(255);
+	fill(255, 255, 255, 128); // rojo con transparencia
+	app.textAlign(LEFT);
     app.textSize(16);
     app.text("Jugador: " + data.nombreJugador, 10, 30);
-    app.text("Puntuación: " + data.puntuacion, 10, 50);
-    app.text("Vidas: " + data.vidas, 10, 70);
-    app.text("Disparos acertados: " + data.disparosAcertados, 10, 90);
+    app.text("Score:   " + data.puntuacion, 10, 50);
+    app.text("Vidas:   " + data.vidas, 10, 70);
+    app.text("Disparos:" + data.disparosAcertados, 10, 90);
 
     int duracionMs = app.millis() - data.tiempoInicio;
     int minutos = duracionMs / 60000;
     int segundos = (duracionMs % 60000) / 1000;
-    app.text("Tiempo: " + minutos + "m " + segundos + "s", 10, 110);
+    app.text("Tiempo:  " + minutos + "m " + segundos + "s", 10, 110);
   }
 
   @Override
