@@ -5,9 +5,10 @@ class Municion {
   float velocidadX, velocidadY;
   int ancho, alto;
   boolean activa;
+  boolean esEnemigo;
   
   // Constructor
-  Municion(float x, float y, float velX, float velY) {
+  Municion(float x, float y, float velX, float velY, boolean esEnemigo) {
     this.x = x;
     this.y = y;
     this.velocidadX = velX;
@@ -15,6 +16,7 @@ class Municion {
     this.ancho = 4;
     this.alto = 8;
     this.activa = true;
+    this.esEnemigo = esEnemigo;
   }
   
   void actualizar() {
@@ -40,11 +42,23 @@ class Municion {
   // Verificar colisión con enemigo
   boolean colisionaCon(Enemigo enemigo) {
     if (!activa) return false;
-    
+    if (esEnemigo) return false; // Los disparos enemigos no colisionan con enemigos
+
     return (x < enemigo.x + enemigo.ancho &&
             x + ancho > enemigo.x &&
             y < enemigo.y + enemigo.alto &&
             y + alto > enemigo.y);
+  }
+
+  // Verificar colisión con nave
+  boolean colisionaCon(Nave nave) {
+    if (!activa) return false;
+    if (!esEnemigo) return false; // Los disparos de la nave no colisionan con la nave
+
+    return (x < nave.x + nave.ancho &&
+            x + ancho > nave.x &&
+            y < nave.y + nave.alto &&
+            y + alto > nave.y);
   }
   
   void desactivar() {

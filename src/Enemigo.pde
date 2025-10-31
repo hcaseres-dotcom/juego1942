@@ -70,4 +70,9 @@ class Enemigo {
   boolean llegaAlFinal() {
     return y > height - alto;
   }
+
+  // Enemigo dispara
+  Municion disparar() {
+    return new Municion(x + ancho / 2, y + alto, 0, 5, true);
+  }
 }

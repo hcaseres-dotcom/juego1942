@@ -47,6 +47,13 @@ class GameView extends View {
       tiempoUltimoEnemigo = app.millis();
     }
 
+    /*
+    for (Enemigo enemigo : enemigos) {
+      if (app.random(1) < 0.01) { // 1% de probabilidad por frame
+        disparos.add(enemigo.disparar());
+      }
+    }*/
+
     // Actualizar disparos
     for (int i = disparos.size() - 1; i >= 0; i--) {
       Municion disparo = disparos.get(i);
@@ -59,6 +66,10 @@ class GameView extends View {
       Enemigo enemigo = enemigos.get(i);
       enemigo.actualizar();
 
+      // Enemigos disparan aleatoriamente
+      if (app.random(1) < 0.01) { // 1% de probabilidad por frame
+        disparos.add(enemigo.disparar());
+      }
       if (!enemigo.estaActivo()) {
         enemigos.remove(i);
       } else if (enemigo.llegaAlFinal()) {
@@ -94,6 +105,22 @@ class GameView extends View {
       }
     }
 
+    // Disparos enemigos vs nave
+    for (int i = disparos.size() - 1; i >= 0; i--) {
+      Municion disparo = disparos.get(i);
+      if (disparo.colisionaCon(nave)) {
+        data.vidas--;
+        disparos.remove(i);
+        if (data.vidas <= 0) {
+          int duracionMs = app.millis() - data.tiempoInicio;
+          int minutos = duracionMs / 60000;
+          int segundos = (duracionMs % 60000) / 1000;
+          data.duracionJuego = minutos + "m " + segundos + "s";
+          controller.cambiarEstado("gameover");
+        }
+      }
+    }
+
     // Nave vs enemigos
     for (int i = enemigos.size() - 1; i >= 0; i--) {
       Enemigo enemigo = enemigos.get(i);
@@ -109,6 +136,7 @@ class GameView extends View {
         }
       }
     }
+
   }
 
   @Override
