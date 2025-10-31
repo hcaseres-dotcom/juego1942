@@ -73,6 +73,6 @@ class Enemigo {
 
   // Enemigo dispara
   Municion disparar() {
-    return new Municion(x + ancho / 2, y + alto, 0, 5);
+    return new Municion(x + ancho / 2, y + alto, 0, 5, true);
   }
 }

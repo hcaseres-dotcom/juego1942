@@ -256,6 +256,18 @@
           "fechaHora": "2025-10-31 13:02:37",
           "disparosAcertados": 2,
           "duracion": "0m 10s"
+        },
+        {
+          "puntuacion": 0,
+          "fechaHora": "2025-10-31 15:42:18",
+          "disparosAcertados": 0,
+          "duracion": "0m 23s"
+        },
+        {
+          "puntuacion": 20,
+          "fechaHora": "2025-10-31 15:42:50",
+          "disparosAcertados": 2,
+          "duracion": "0m 30s"
         }
       ],
       "nombre": "Prueba"

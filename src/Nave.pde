@@ -54,7 +54,7 @@ class Nave {
   
   // Método para disparar
   Municion disparar() {
-    return new Municion(x + ancho/2, y, 0, -8); // Disparo hacia arriba
+    return new Municion(x + ancho/2, y, 0, -8, false); // Disparo hacia arriba
   }
   
   // Verificar colisión
