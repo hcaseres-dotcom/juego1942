@@ -32,5 +32,8 @@ class EstadisticasView extends View {
         if (keyCode == BACKSPACE || keyCode == ESC) {
             controller.cambiarEstado("menu");
         }
+        else if (key == '1' || keyCode == ENTER) {
+            controller.cambiarEstado("mas_estadisticas");
+        }
     }
 }
