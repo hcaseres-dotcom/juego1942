@@ -20,11 +20,11 @@ class GraficoBarras {
     
     textAlign(CENTER);
     textSize(14);
-    fill(0);
-    text("Promedio de puntuaciones por jugador", width/2, 30);
+    fill(255);
+    text("Promedio de puntuaciones por jugador", width/2, 130);
 
     for (int i = 0; i < num; i++) {
-      float altura = map(valores[i], 0, maxValor, 0, height - 100);
+      float altura = map(valores[i], 0, maxValor, 0, height - 250);
       float x = (i + 1) * anchoBarra;
       float y = height - altura - 50;
       
@@ -36,7 +36,8 @@ class GraficoBarras {
       rect(x - anchoBarra / 4, y, anchoBarra / 2, altura);
       
       // Etiquetas
-      fill(0);
+      fill(255);
+      textSize(10);
       text(nombres[i], x, height - 20);
       text(nf(valores[i], 1, 1), x, y - 5);
     }
