@@ -1,22 +1,26 @@
 // Archivo: Nave.pde
 
 class Nave {
+  PApplet app;
   float x, y;
   float velocidad;
   int ancho, alto;
   boolean moverIzquierda, moverDerecha, moverArriba, moverAbajo;
+  PImage imgNave;
   
   // Constructor
-  Nave(float x, float y) {
+  Nave(PApplet app, float x, float y) {
+    this.app = app;
     this.x = x;
     this.y = y;
     this.velocidad = 5;
-    this.ancho = 40;
-    this.alto = 30;
+    this.ancho = 60;
+    this.alto = 45;
     this.moverIzquierda = false;
     this.moverDerecha = false;
     this.moverArriba = false;
     this.moverAbajo = false;
+    this.imgNave = app.loadImage("nave.png"); // Cargar imagen de la nave
   }
   
   void actualizar() {
@@ -36,12 +40,19 @@ class Nave {
   }
   
   void dibujar() {
-    // Dibujar la nave como un triángulo
-    fill(0, 255, 0);
-    stroke(255);
-    triangle(x + ancho/2, y,           // punta superior
-             x, y + alto,              // esquina inferior izquierda
-             x + ancho, y + alto);     // esquina inferior derecha
+    // Dibujar hit triangle para depuración
+    /*
+    fill(0, 255, 0, 50);
+    stroke(255, 0, 0);
+    triangle(x + ancho/2, y + alto,           // punta superior
+             x, y,              // esquina inferior izquierda
+             x + ancho, y);     // esquina inferior derecha
+    */
+
+    // Dibujar la imagen en el mismo lugar que el triángulo
+    app.imageMode(CENTER);
+    app.image(imgNave, x + ancho/2, y + alto/2, ancho, alto);
+
   }
   
   // Métodos para controlar el movimiento

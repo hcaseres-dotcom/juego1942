@@ -25,7 +25,7 @@ class GameView extends View {
 
   @Override
   void iniciar() {
-    nave = new Nave(app.width / 2, app.height - 100);
+    nave = new Nave(app, app.width / 2, app.height - 100);
     data.tiempoInicio = app.millis();
     data.tiempoInicio = app.millis();
     data.vidas = 3;
@@ -73,6 +73,7 @@ class GameView extends View {
       if (!enemigo.estaActivo()) {
         enemigos.remove(i);
       } else if (enemigo.llegaAlFinal()) {
+        // data.puntuacion -= 5;
         enemigos.remove(i);
         if (data.vidas <= 0) {
           int duracionMs = app.millis() - data.tiempoInicio;
