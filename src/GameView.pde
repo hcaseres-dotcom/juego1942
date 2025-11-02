@@ -43,7 +43,7 @@ class GameView extends View {
 
     // Generar enemigos periódicamente
     if (app.millis() - tiempoUltimoEnemigo > intervaloEnemigos) {
-      enemigos.add(new Enemigo(app.random(50, app.width - 50), -30, int(app.random(2))));
+      enemigos.add(new Enemigo(app, app.random(50, app.width - 50), -30, int(app.random(3))));
       tiempoUltimoEnemigo = app.millis();
     }
 

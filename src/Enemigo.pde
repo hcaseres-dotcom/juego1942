@@ -1,21 +1,26 @@
 // Archivo: Enemigo.pde
 
 class Enemigo {
+  PApplet app;
   float x, y;
   float velocidad;
   int ancho, alto;
   boolean activo;
   int tipoEnemigo;
+  PImage imgEnemigo;
   
   // Constructor
-  Enemigo(float x, float y, int tipo) {
+  Enemigo(PApplet app, float x, float y, int tipo) {
+    this.app = app;
     this.x = x;
     this.y = y;
     this.velocidad = random(1, 3);
-    this.ancho = 30;
-    this.alto = 25;
+    this.ancho = 45;
+    this.alto = 45;
     this.activo = true;
     this.tipoEnemigo = tipo;
+    // this.imgEnemigo = app.loadImage("enemigo" + tipo + ".png"); // Cargar imagen según el tipo
+    this.imgEnemigo = app.loadImage("enemigo.png"); // Cargar imagen según el tipo
   }
   
   void actualizar() {
@@ -39,22 +44,24 @@ class Enemigo {
       // Color según el tipo de enemigo
       switch(tipoEnemigo) {
         case 0:
-          fill(255, 0, 0); // Rojo
+          fill(255, 0, 0, 50); // Rojo
           break;
         case 1:
-          fill(255, 0, 255); // Magenta
+          fill(255, 0, 255, 50); // Magenta
           break;
         default:
-          fill(150, 150, 150); // Gris
+          fill(150, 150, 150, 50); // Gris
       }
       
-      stroke(255);
+      // Dibujar hit box para depuración
+      /*
+      stroke(255, 0, 0, 50);
       rect(x, y, ancho, alto);
-      
-      // Dibujar detalles del enemigo
-      fill(255);
-      rect(x + 5, y + 5, 5, 5);
-      rect(x + ancho - 10, y + 5, 5, 5);
+      */
+
+      // Dibujar la imagen en el mismo lugar que el triángulo
+      app.imageMode(CENTER);
+      app.image(imgEnemigo, x + ancho/2, y + alto/2, ancho, alto);
     }
   }
   
