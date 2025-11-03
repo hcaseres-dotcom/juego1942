@@ -63,6 +63,24 @@ class Enemigo {
           app.imageMode(CENTER);
           app.image(imgMilei, x + ancho/2, y + alto/2, ancho, alto);
           break;
+        case 3:
+          fill(255, 0, 255, 50); // Magenta
+          // Dibujar la imagen en el mismo lugar que el triángulo
+          app.imageMode(CENTER);
+          app.image(imgEnemigo, x + ancho/2, y + alto/2, ancho, alto);
+          break;
+        case 4:
+          fill(255, 0, 255, 50); // Magenta
+          // Dibujar la imagen en el mismo lugar que el triángulo
+          app.imageMode(CENTER);
+          app.image(imgEnemigo, x + ancho/2, y + alto/2, ancho, alto);
+          break;
+        case 5:
+          fill(255, 0, 255, 50); // Magenta
+          // Dibujar la imagen en el mismo lugar que el triángulo
+          app.imageMode(CENTER);
+          app.image(imgEnemigo, x + ancho/2, y + alto/2, ancho, alto);
+          break;
         default:
           fill(150, 150, 150, 50); // Gris
           break;
