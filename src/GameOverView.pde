@@ -46,6 +46,7 @@ class GameOverView extends View {
     app.textSize(14);
     app.fill(255);
     app.text("Presiona R para jugar de nuevo", app.width / 2, app.height / 2 + 110);
+    app.text("Presiona BACKSPACE o ESC para volver al menu principal", app.width / 2, app.height / 2 + 160);
 
     app.textSize(12);
     app.fill(150, 150, 150);
@@ -57,6 +58,10 @@ class GameOverView extends View {
     if (key == 'r' || key == 'R') {
       data.reset();
       controller.cambiarEstado("nombre");
+    }
+
+    if (keyCode == BACKSPACE || keyCode == ESC) {
+      controller.cambiarEstado("menu");
     }
   }
 }

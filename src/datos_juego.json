@@ -1,31 +1,6 @@
 {
-  "ultimoJugador": "Hernan",
+  "ultimoJugador": "Guido",
   "jugadores": [
-    {
-      "partidas": [
-        {
-          "tiempoInicio": 25456,
-          "duracionJuego": 21,
-          "vidas": 0,
-          "puntuacion": 90,
-          "fechaHora": "2025-11-03 18:35:23",
-          "nombreJugador": "guido",
-          "disparosAcertados": 9,
-          "disparosTotales": 24
-        },
-        {
-          "tiempoInicio": 58941,
-          "duracionJuego": 5,
-          "vidas": 0,
-          "puntuacion": 10,
-          "fechaHora": "2025-11-03 18:35:40",
-          "nombreJugador": "guido",
-          "disparosAcertados": 1,
-          "disparosTotales": 11
-        }
-      ],
-      "nombre": "guido"
-    },
     {
       "partidas": [
         {
@@ -60,6 +35,83 @@
         }
       ],
       "nombre": "Hernan"
+    },
+    {
+      "partidas": [{
+        "tiempoInicio": 6689,
+        "duracionJuego": 43,
+        "vidas": 0,
+        "puntuacion": 180,
+        "fechaHora": "2025-11-03 19:27:43",
+        "nombreJugador": "Lucas",
+        "disparosAcertados": 18,
+        "disparosTotales": 47
+      }],
+      "nombre": "Lucas"
+    },
+    {
+      "partidas": [{
+        "tiempoInicio": 6817,
+        "duracionJuego": 20,
+        "vidas": 0,
+        "puntuacion": 120,
+        "fechaHora": "2025-11-03 19:28:43",
+        "nombreJugador": "Horacio",
+        "disparosAcertados": 12,
+        "disparosTotales": 26
+      }],
+      "nombre": "Horacio"
+    },
+    {
+      "partidas": [{
+        "tiempoInicio": 4223,
+        "duracionJuego": 26,
+        "vidas": 0,
+        "puntuacion": 170,
+        "fechaHora": "2025-11-03 19:30:23",
+        "nombreJugador": "Vanesa",
+        "disparosAcertados": 19,
+        "disparosTotales": 46
+      }],
+      "nombre": "Vanesa"
+    },
+    {
+      "partidas": [
+        {
+          "tiempoInicio": 7031,
+          "duracionJuego": 18,
+          "vidas": 0,
+          "puntuacion": 120,
+          "fechaHora": "2025-11-03 19:33:03",
+          "nombreJugador": "Guille",
+          "disparosAcertados": 12,
+          "disparosTotales": 31
+        },
+        {
+          "tiempoInicio": 64528,
+          "duracionJuego": 20,
+          "vidas": 0,
+          "puntuacion": 60,
+          "fechaHora": "2025-11-03 19:33:53",
+          "nombreJugador": "Guille",
+          "disparosAcertados": 6,
+          "disparosTotales": 47
+        }
+      ],
+      "nombre": "Guille"
+    },
+    {
+      "partidas": [{
+        "tiempoInicio": 4797,
+        "duracionJuego": 40,
+        "vidas": 0,
+        "puntuacion": 100,
+        "fechaHora": "2025-11-03 19:34:47",
+        "nombreJugador": "Guido",
+        "disparosAcertados": 2,
+        "disparosTotales": 2
+      }],
+      "nombre": "Guido"
     }
   ]
 }
