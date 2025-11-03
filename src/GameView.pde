@@ -40,27 +40,30 @@ class GameView extends View {
   @Override
   void actualizar() {
     nave.actualizar();
+    generarEnemigos();
+    actualizarDisparos();
+    actualizarEnemigos();
+    verificarColisiones();
+  }
 
+  void generarEnemigos(){
     // Generar enemigos periódicamente
     if (app.millis() - tiempoUltimoEnemigo > intervaloEnemigos) {
       enemigos.add(new Enemigo(app, app.random(50, app.width - 50), -30, int(app.random(3))));
       tiempoUltimoEnemigo = app.millis();
-    }
+    } 
+  }
 
-    /*
-    for (Enemigo enemigo : enemigos) {
-      if (app.random(1) < 0.01) { // 1% de probabilidad por frame
-        disparos.add(enemigo.disparar());
-      }
-    }*/
-
+  void actualizarDisparos(){
     // Actualizar disparos
     for (int i = disparos.size() - 1; i >= 0; i--) {
       Municion disparo = disparos.get(i);
       disparo.actualizar();
       if (!disparo.estaActiva()) disparos.remove(i);
     }
+  }
 
+  void actualizarEnemigos(){
     // Actualizar enemigos
     for (int i = enemigos.size() - 1; i >= 0; i--) {
       Enemigo enemigo = enemigos.get(i);
@@ -82,8 +85,6 @@ class GameView extends View {
         }
       }
     }
-
-    verificarColisiones();
   }
 
   void verificarColisiones() {

@@ -1,28 +1,65 @@
 {
-  "ultimoJugador": "guido",
-  "jugadores": [{
-    "partidas": [
-      {
-        "tiempoInicio": 25456,
-        "duracionJuego": 21,
-        "vidas": 0,
-        "puntuacion": 90,
-        "fechaHora": "2025-11-03 18:35:23",
-        "nombreJugador": "guido",
-        "disparosAcertados": 9,
-        "disparosTotales": 24
-      },
-      {
-        "tiempoInicio": 58941,
-        "duracionJuego": 5,
-        "vidas": 0,
-        "puntuacion": 10,
-        "fechaHora": "2025-11-03 18:35:40",
-        "nombreJugador": "guido",
-        "disparosAcertados": 1,
-        "disparosTotales": 11
-      }
-    ],
-    "nombre": "guido"
-  }]
+  "ultimoJugador": "Hernan",
+  "jugadores": [
+    {
+      "partidas": [
+        {
+          "tiempoInicio": 25456,
+          "duracionJuego": 21,
+          "vidas": 0,
+          "puntuacion": 90,
+          "fechaHora": "2025-11-03 18:35:23",
+          "nombreJugador": "guido",
+          "disparosAcertados": 9,
+          "disparosTotales": 24
+        },
+        {
+          "tiempoInicio": 58941,
+          "duracionJuego": 5,
+          "vidas": 0,
+          "puntuacion": 10,
+          "fechaHora": "2025-11-03 18:35:40",
+          "nombreJugador": "guido",
+          "disparosAcertados": 1,
+          "disparosTotales": 11
+        }
+      ],
+      "nombre": "guido"
+    },
+    {
+      "partidas": [
+        {
+          "tiempoInicio": 3576,
+          "duracionJuego": 5,
+          "vidas": 0,
+          "puntuacion": 30,
+          "fechaHora": "2025-11-03 19:15:06",
+          "nombreJugador": "Hernan",
+          "disparosAcertados": 3,
+          "disparosTotales": 6
+        },
+        {
+          "tiempoInicio": 10808,
+          "duracionJuego": 20,
+          "vidas": 0,
+          "puntuacion": 110,
+          "fechaHora": "2025-11-03 19:15:28",
+          "nombreJugador": "Hernan",
+          "disparosAcertados": 11,
+          "disparosTotales": 37
+        },
+        {
+          "tiempoInicio": 33814,
+          "duracionJuego": 6,
+          "vidas": 0,
+          "puntuacion": 10,
+          "fechaHora": "2025-11-03 19:15:36",
+          "nombreJugador": "Hernan",
+          "disparosAcertados": 1,
+          "disparosTotales": 1
+        }
+      ],
+      "nombre": "Hernan"
+    }
+  ]
 }
