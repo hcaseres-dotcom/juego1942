@@ -57,6 +57,36 @@
           "nombreJugador": "Hernan",
           "disparosAcertados": 1,
           "disparosTotales": 1
+        },
+        {
+          "tiempoInicio": 5015,
+          "duracionJuego": 27,
+          "vidas": 0,
+          "puntuacion": 190,
+          "fechaHora": "2025-11-03 19:24:39",
+          "nombreJugador": "Hernan",
+          "disparosAcertados": 19,
+          "disparosTotales": 83
+        },
+        {
+          "tiempoInicio": 3389,
+          "duracionJuego": 12,
+          "vidas": 0,
+          "puntuacion": 60,
+          "fechaHora": "2025-11-03 19:26:30",
+          "nombreJugador": "Hernan",
+          "disparosAcertados": 6,
+          "disparosTotales": 27
+        },
+        {
+          "tiempoInicio": 3389,
+          "duracionJuego": 12,
+          "vidas": -1,
+          "puntuacion": 60,
+          "fechaHora": "2025-11-03 19:26:30",
+          "nombreJugador": "Hernan",
+          "disparosAcertados": 6,
+          "disparosTotales": 27
         }
       ],
       "nombre": "Hernan"
