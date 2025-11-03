@@ -76,10 +76,8 @@ class GameView extends View {
         // data.puntuacion -= 5;
         enemigos.remove(i);
         if (data.vidas <= 0) {
-          int duracionMs = app.millis() - data.tiempoInicio;
-          int minutos = duracionMs / 60000;
-          int segundos = (duracionMs % 60000) / 1000;
-          data.duracionJuego = minutos + "m " + segundos + "s";
+          // Guardar duración en segundos
+          data.duracionJuego = (app.millis() - data.tiempoInicio) / 1000;
           controller.cambiarEstado("gameover");
         }
       }
@@ -113,10 +111,7 @@ class GameView extends View {
         data.vidas--;
         disparos.remove(i);
         if (data.vidas <= 0) {
-          int duracionMs = app.millis() - data.tiempoInicio;
-          int minutos = duracionMs / 60000;
-          int segundos = (duracionMs % 60000) / 1000;
-          data.duracionJuego = minutos + "m " + segundos + "s";
+          data.duracionJuego = (app.millis() - data.tiempoInicio) / 1000;
           controller.cambiarEstado("gameover");
         }
       }
@@ -129,10 +124,7 @@ class GameView extends View {
         data.vidas--;
         enemigos.remove(i);
         if (data.vidas <= 0) {
-          int duracionMs = app.millis() - data.tiempoInicio;
-          int minutos = duracionMs / 60000;
-          int segundos = (duracionMs % 60000) / 1000;
-          data.duracionJuego = minutos + "m " + segundos + "s";
+          data.duracionJuego = (app.millis() - data.tiempoInicio) / 1000;
           controller.cambiarEstado("gameover");
         }
       }

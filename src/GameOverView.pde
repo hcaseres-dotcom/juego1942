@@ -13,8 +13,8 @@ class GameOverView extends View {
 
   @Override
   void iniciar() {
-      GestorDatos.guardarPartida(app, data.nombreJugador, data.puntuacion, data.duracionJuego, data.disparosAcertados);
-      GestorDatos.mostrarEstadisticas(app);
+      //GestorDatos.guardarPartida(app, data);
+      GestorDatos.guardarPartida(app, data);
   }
 
   @Override
@@ -34,7 +34,10 @@ class GameOverView extends View {
     app.text("Puntuación Final: " + data.puntuacion, app.width / 2, app.height / 2 - 40);
     app.text("Disparos acertados: " + data.disparosAcertados, app.width / 2, app.height / 2 - 10);
     app.text("Disparos totales: " + data.disparosTotales, app.width / 2, app.height / 2 + 20);
-    app.text("Duración: " + data.duracionJuego, app.width / 2, app.height / 2 + 50);
+  // Formatear duración (almacenada en segundos) como Xm Ys
+  int minutos = data.duracionJuego / 60;
+  int segundos = data.duracionJuego % 60;
+  app.text("Duración: " + minutos + "m " + segundos + "s", app.width / 2, app.height / 2 + 50);
 
     app.textSize(16);
     app.fill(0, 255, 0);
