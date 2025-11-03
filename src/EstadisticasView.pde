@@ -16,14 +16,16 @@ class EstadisticasView extends View {
     void dibujar() {
         app.textAlign(CENTER);
         app.fill(255);
-        app.textSize(40);
+        app.textSize(24);
         app.text("ESTADISTICAS DEL JUEGO", app.width / 2, 80);
-        app.textSize(20);
-        String rutaDatos = sketchPath("datos_juego.json");
-        app.text("Los datos se guardan en: " + rutaDatos, app.width / 2, app.height - 30);
-        String estadisticas = GestorDatos.obtenerEstadisticas(app);
-        app.text(estadisticas, app.width / 2, app.height / 4);
         app.textSize(16);
+        String rutaDatos = sketchPath("datos_juego.json");
+        String metricas = GestorDatos.obtenerEstadisticas(app);
+        app.text(metricas, app.width / 2, app.height / 4);
+        app.textSize(14);
+        app.text("[1] MÁS ESTADÍSTICAS", app.width / 2, app.height - 120);
+        app.textSize(10);
+        app.text("Los datos se guardan en: " + rutaDatos, app.width / 2, app.height - 30);
         app.text("Presiona BACKSPACE o ESC para volver al menú principal.", app.width / 2, app.height - 60);
     }
 

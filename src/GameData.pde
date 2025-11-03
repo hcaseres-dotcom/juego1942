@@ -3,7 +3,7 @@ class GameData {
   int puntuacion = 0;
   int disparosAcertados = 0;
   int disparosTotales = 0;
-  String duracionJuego = "";
+  int duracionJuego = 0;
   int vidas = 3;
   int tiempoInicio = 0;
 
@@ -11,7 +11,7 @@ class GameData {
     puntuacion = 0;
     disparosAcertados = 0;
     disparosTotales = 0;
-    duracionJuego = "";
+    duracionJuego = 0;
     vidas = 3;
     tiempoInicio = 0;
   }

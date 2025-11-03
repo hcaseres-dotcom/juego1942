@@ -42,7 +42,8 @@ class MenuView extends View {
 		app.text("3 INSTRUCCIONES", app.width/2-70, app.height/2+200);
 		app.textAlign(LEFT);
 		app.text("4 ESTADISTICAS", app.width/2+40, app.height/2+200);
-		app.textSize(12);
+		app.textAlign(CENTER);
+		app.textSize(9);
 		app.fill(150, 150, 150);
 		app.text("Los datos se guardan en: " + sketchPath("datos_juego.json"), app.width/2, app.height - 30);
 	}

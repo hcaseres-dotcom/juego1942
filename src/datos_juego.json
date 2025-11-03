@@ -1,262 +1,28 @@
 {
-  "ultimoJugador": "Guille",
-  "jugadores": [
-    {
-      "partidas": [
-        {
-          "puntuacion": 80,
-          "fechaHora": "2025-10-03 21:23:28",
-          "disparosAcertados": 8,
-          "duracion": "0m 12s"
-        },
-        {
-          "puntuacion": 40,
-          "fechaHora": "2025-10-03 22:17:48",
-          "disparosAcertados": 4,
-          "duracion": "0m 11s"
-        }
-      ],
-      "nombre": "Horacio"
-    },
-    {
-      "partidas": [
-        {
-          "puntuacion": 100,
-          "fechaHora": "2025-10-06 11:39:24",
-          "disparosAcertados": 10,
-          "duracion": "0m 14s"
-        },
-        {
-          "puntuacion": 0,
-          "fechaHora": "2025-10-17 15:45:51",
-          "disparosAcertados": 0,
-          "duracion": "0m 10s"
-        },
-        {
-          "puntuacion": 350,
-          "fechaHora": "2025-10-17 15:47:48",
-          "disparosAcertados": 35,
-          "duracion": "1m 4s"
-        }
-      ],
-      "nombre": "Vanessa"
-    },
-    {
-      "partidas": [{
-        "puntuacion": 40,
-        "fechaHora": "2025-10-21 10:07:15",
-        "disparosAcertados": 4,
-        "duracion": "0m 9s"
-      }],
-      "nombre": "Tito"
-    },
-    {
-      "partidas": [{
-        "puntuacion": 40,
-        "fechaHora": "2025-10-29 04:53:03",
-        "disparosAcertados": 4,
-        "duracion": "0m 9s"
-      }],
-      "nombre": "Guido"
-    },
-    {
-      "partidas": [{
-        "puntuacion": 50,
-        "fechaHora": "2025-10-30 19:08:02",
-        "disparosAcertados": 5,
-        "duracion": "0m 10s"
-      }],
-      "nombre": "Pepe"
-    },
-    {
-      "partidas": [
-        {
-          "puntuacion": 30,
-          "fechaHora": "2025-10-30 19:20:08",
-          "disparosAcertados": 3,
-          "duracion": "0m 7s"
-        },
-        {
-          "puntuacion": 70,
-          "fechaHora": "2025-10-30 19:20:26",
-          "disparosAcertados": 7,
-          "duracion": "0m 11s"
-        },
-        {
-          "puntuacion": 40,
-          "fechaHora": "2025-10-30 19:20:41",
-          "disparosAcertados": 4,
-          "duracion": "0m 10s"
-        },
-        {
-          "puntuacion": 0,
-          "fechaHora": "2025-10-30 19:21:34",
-          "disparosAcertados": 0,
-          "duracion": "0m 7s"
-        },
-        {
-          "puntuacion": 320,
-          "fechaHora": "2025-10-30 19:23:57",
-          "disparosAcertados": 32,
-          "duracion": "0m 48s"
-        }
-      ],
-      "nombre": "asd"
-    },
-    {
-      "partidas": [{
+  "ultimoJugador": "guido",
+  "jugadores": [{
+    "partidas": [
+      {
+        "tiempoInicio": 25456,
+        "duracionJuego": 21,
+        "vidas": 0,
         "puntuacion": 90,
-        "fechaHora": "2025-10-30 20:40:56",
+        "fechaHora": "2025-11-03 18:35:23",
+        "nombreJugador": "guido",
         "disparosAcertados": 9,
-        "duracion": "0m 16s"
-      }],
-      "nombre": "Hernan"
-    },
-    {
-      "partidas": [
-        {
-          "puntuacion": 660,
-          "fechaHora": "2025-10-30 22:10:16",
-          "disparosAcertados": 66,
-          "duracion": "1m 25s"
-        },
-        {
-          "puntuacion": 40,
-          "fechaHora": "2025-10-30 22:11:07",
-          "disparosAcertados": 4,
-          "duracion": "0m 9s"
-        },
-        {
-          "puntuacion": 10,
-          "fechaHora": "2025-10-30 22:11:49",
-          "disparosAcertados": 1,
-          "duracion": "0m 7s"
-        },
-        {
-          "puntuacion": 0,
-          "fechaHora": "2025-10-30 22:12:23",
-          "disparosAcertados": 0,
-          "duracion": "0m 4s"
-        },
-        {
-          "puntuacion": 0,
-          "fechaHora": "2025-10-30 22:13:04",
-          "disparosAcertados": 0,
-          "duracion": "0m 3s"
-        },
-        {
-          "puntuacion": 30,
-          "fechaHora": "2025-10-30 22:13:21",
-          "disparosAcertados": 3,
-          "duracion": "0m 10s"
-        },
-        {
-          "puntuacion": 0,
-          "fechaHora": "2025-10-31 12:52:16",
-          "disparosAcertados": 0,
-          "duracion": "0m 2s"
-        },
-        {
-          "puntuacion": 130,
-          "fechaHora": "2025-10-31 12:52:46",
-          "disparosAcertados": 13,
-          "duracion": "0m 26s"
-        },
-        {
-          "puntuacion": 120,
-          "fechaHora": "2025-10-31 12:53:19",
-          "disparosAcertados": 12,
-          "duracion": "0m 29s"
-        },
-        {
-          "puntuacion": 130,
-          "fechaHora": "2025-10-31 12:55:30",
-          "disparosAcertados": 13,
-          "duracion": "1m 0s"
-        },
-        {
-          "puntuacion": 40,
-          "fechaHora": "2025-10-31 12:55:40",
-          "disparosAcertados": 4,
-          "duracion": "0m 8s"
-        },
-        {
-          "puntuacion": 90,
-          "fechaHora": "2025-10-31 12:56:34",
-          "disparosAcertados": 9,
-          "duracion": "0m 18s"
-        },
-        {
-          "puntuacion": 10,
-          "fechaHora": "2025-10-31 13:01:44",
-          "disparosAcertados": 1,
-          "duracion": "0m 6s"
-        },
-        {
-          "puntuacion": 10,
-          "fechaHora": "2025-10-31 13:01:52",
-          "disparosAcertados": 1,
-          "duracion": "0m 6s"
-        },
-        {
-          "puntuacion": 20,
-          "fechaHora": "2025-10-31 13:02:05",
-          "disparosAcertados": 2,
-          "duracion": "0m 10s"
-        },
-        {
-          "puntuacion": 20,
-          "fechaHora": "2025-10-31 13:02:18",
-          "disparosAcertados": 2,
-          "duracion": "0m 11s"
-        },
-        {
-          "puntuacion": 0,
-          "fechaHora": "2025-10-31 13:02:25",
-          "disparosAcertados": 0,
-          "duracion": "0m 5s"
-        },
-        {
-          "puntuacion": 20,
-          "fechaHora": "2025-10-31 13:02:37",
-          "disparosAcertados": 2,
-          "duracion": "0m 10s"
-        },
-        {
-          "puntuacion": 0,
-          "fechaHora": "2025-10-31 15:42:18",
-          "disparosAcertados": 0,
-          "duracion": "0m 23s"
-        },
-        {
-          "puntuacion": 20,
-          "fechaHora": "2025-10-31 15:42:50",
-          "disparosAcertados": 2,
-          "duracion": "0m 30s"
-        },
-        {
-          "puntuacion": 90,
-          "fechaHora": "2025-11-01 22:46:41",
-          "disparosAcertados": 9,
-          "duracion": "0m 16s"
-        },
-        {
-          "puntuacion": 340,
-          "fechaHora": "2025-11-01 22:47:34",
-          "disparosAcertados": 34,
-          "duracion": "0m 48s"
-        }
-      ],
-      "nombre": "Prueba"
-    },
-    {
-      "partidas": [{
-        "puntuacion": 270,
-        "fechaHora": "2025-11-01 22:48:54",
-        "disparosAcertados": 27,
-        "duracion": "0m 38s"
-      }],
-      "nombre": "Guille"
-    }
-  ]
+        "disparosTotales": 24
+      },
+      {
+        "tiempoInicio": 58941,
+        "duracionJuego": 5,
+        "vidas": 0,
+        "puntuacion": 10,
+        "fechaHora": "2025-11-03 18:35:40",
+        "nombreJugador": "guido",
+        "disparosAcertados": 1,
+        "disparosTotales": 11
+      }
+    ],
+    "nombre": "guido"
+  }]
 }
