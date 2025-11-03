@@ -1,4 +1,4 @@
-# p3. Requerimientos funcionales más relevantes
+# P3. Requerimientos funcionales más relevantes
 
 ## ✅ Priorización de funcionalidades
 
@@ -7,7 +7,9 @@ Clasificación según **Must / Should / Could**, todas trazables a los **Requeri
 ### 🟩 Obligatorias  (Must)
 
 - **F-01 Estados y navegación**  
-  El sistema gestiona los estados: `MENU`, `CIENCIA_DE_DATOS`,`ENTRADA_NOMBRE`, `JUGANDO`, `GAME_OVER`
+  El sistema gestiona los estados: `menu`, `nombre`, `juego`, `gameover`, `instrucciones`, `pausa`, `estadisticas`, `mas_estadisticas`.  
+  
+  Cada estado tiene su propia vista.
 
 - **F-02 Entrada de nombre**  
   Es obligatorio la confirmación del nombre del jugador. También se puede reutilizar el último ingresado.
@@ -16,7 +18,7 @@ Clasificación según **Must / Should / Could**, todas trazables a los **Requeri
   Movimiento en 4 sentidos con teclado. Disparo con cadencia limitada.
 
 - **F-04 Enemigos y niveles**  
-  Aparición periódica de enemigos (≥2 tipos) con comportamientos distintos y dificultad creciente.
+  Aparición periódica de enemigos (≥2 tipos) con comportamientos distintos.
 
 - **F-05 Colisiones y puntaje**  
   - Bala ↔ Enemigo: suma puntos y registra aciertos  
@@ -43,10 +45,10 @@ Clasificación según **Must / Should / Could**, todas trazables a los **Requeri
 
 ### 🟦 Opcionales / Extensiones (Could)
 
-- **F-10 Dificultad dinámica**  
-  Ajuste automático según el rendimiento del jugador.
+- **F-10 Dificultad creciente y dinámica❌**   
+  Dificultad creciente con el tiempo y ajuste automático según el rendimiento del jugador.
 
-- **F-11 Exportación JSON**  
+- **F-11 Exportación JSON✅**  
   Opción para exportar el histórico completo para análisis externo.
 
 ---

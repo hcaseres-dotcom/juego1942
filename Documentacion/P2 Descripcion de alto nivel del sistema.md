@@ -1,23 +1,35 @@
-# p2. Descripción de alto nivel del sistema
+# P2. Descripción de alto nivel del sistema
+
+Orientamos la solución de software siguiendo el modelo **MVC (Modelo-Vista-Controlador)** para separar las responsabilidades y facilitar el mantenimiento y la escalabilidad del código.
 
 # **Vista general (módulos):**
 
 ## 🧱 **Core de juego (Clases principales del juego):** 
 
-- `Juego`: gestiona el loop principal y los estados (`Menú`, `Entrada`, `Jugando`, `Game Over`)
-- `Nave`: representa al jugador
-- `Municion`: proyectiles disparados por el jugador
-- `Enemigo`: clase base con subclases que incorporan IA simple
-- `LevelManager`: controla aparición de enemigos y dificultad progresiva
-- `CollisionManager`: gestiona colisiones usando AABB (Axis-Aligned Bounding Box)
-
+- `Controller`: gestiona el loop principal y los estados del juego:
+  - Menú principal
+  - Entrada de nombre
+  - Juego activo
+  - Game Over
+  - Instrucciones
+  - Análisis de estadísticas
+- `View`: clase abstracta para las vistas del juego:
+  - `GameView`: renderiza el juego, HUD y elementos visuales.
+  - `MenuView`: muestra el menú principal y opciones.
+  - `NombreInputView`: gestiona la entrada del nombre del jugador.
+  - `PausaView`: muestra la pantalla de pausa.
+  - `GameOverView`: muestra la pantalla de Game Over.
+  - `InstructionsView`: muestra las instrucciones del juego.
+  - `EstadisticasView`: muestra las estadísticas del jugador.
+  - `MoreEstadisticasView`: muestra estadísticas adicionales.
+- Clases Modelo: contiene la lógica de cada elemento del juego:
+  - `Nave`: clase base para la nave del jugador.
+  - `Enemigo`: clase base para los enemigos.
+  - `Municion`: clase base para los proyectiles disparados por la nave y enemigos.
 
 ## 📊 **Datos y análisis:** 
-
-- `DataCollector` (registra contadores durante la partida)
-- `GestorDatos` (carga y guarda datos en formato JSON)
-- `StatsAnalyzer` (calcula métricas como promedio, máximo, mínimo, precisión, puntaje y duración)
-`StatsScreen` (muestra una tabla de estadísticas y un gráfico integrado).
+  - `GestorDatos`: maneja la carga y guardado de datos en formato JSON.
+  - `GraficoBarras`: genera gráficos de barras para visualización de estadísticas.
 
 ## 🖥️ Interfaz
 
@@ -30,6 +42,7 @@
   - Menú principal
   - Entrada de nombre
   - Juego
+  - Pausa
   - Game Over
   - Análisis de estadísticas
 
@@ -52,16 +65,13 @@
 ## 🧾 Modelo de datos por partida (mínimo)
 
 Estos campos son obligatorios para cumplir con el módulo de **Ciencia de Datos**:
-
-- `jugador`: nombre ingresado por el jugador
-- `fechaISO`: fecha y hora 
-- `puntuacion`: puntaje total obtenido
-- `disparosAcertados`: cantidad de disparos que impactaron
-- `disparosTotales`: cantidad total de disparos realizados
-- `enemigosDerrotados`: número de enemigos eliminados
-- `vidasPerdidas`: cantidad de vidas perdidas
-- `victoria`: `true` si ganó la partida, `false` si no
-- `nivelAlcanzado`: último nivel jugado
-- `duracionSeg`: duración total de la partida en segundos
+- `tiempoInicio` (timestamp de inicio del juego)
+- `duracionJuego` (en segundos)
+- `vidas` (vidas restantes al finalizar)
+- `puntuacion` (puntaje final)
+- `fechaHora` (fecha y hora de la partida)
+- `nombreJugador` (nombre ingresado por el jugador)
+- `disparosAcertados` (cantidad de disparos que impactaron)
+- `disparosTotales` (cantidad total de disparos realizados)
 
 ---
