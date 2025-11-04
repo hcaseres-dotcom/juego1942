@@ -6,6 +6,9 @@
 
 ### **Juego principal:**
 - 1 jugador controlable-
+- Modo SURVIVAL (oleadas infinitas de enemigos)
+- 1 tipo de nave jugable
+- Disparo básico
 - 2 tipos de enemigos 
 - Colisiones, puntaje, vidas, condiciones de victoria/derrota
 

@@ -1,5 +1,5 @@
 {
-  "ultimoJugador": "Guido",
+  "ultimoJugador": "Pepe",
   "jugadores": [
     {
       "partidas": [
@@ -142,6 +142,19 @@
         "disparosTotales": 2
       }],
       "nombre": "Guido"
+    },
+    {
+      "partidas": [{
+        "tiempoInicio": 33193,
+        "duracionJuego": 18,
+        "vidas": 0,
+        "puntuacion": 140,
+        "fechaHora": "2025-11-04 12:48:27",
+        "nombreJugador": "Pepe",
+        "disparosAcertados": 14,
+        "disparosTotales": 53
+      }],
+      "nombre": "Pepe"
     }
   ]
 }
