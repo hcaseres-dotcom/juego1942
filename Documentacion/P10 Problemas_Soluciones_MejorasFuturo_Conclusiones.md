@@ -3,6 +3,7 @@
 Debimos re diseñar la implementacion de clases para separar las responsabilidades siguiendo el diseño de **MVC**, lo que nos llevo a separar la clase Juego en la clase Controller y GameView.
 
 ## Mejoras a futuro
+- Mejorar la implementación del modelo MVC para una mayor separación de responsabilidades.
 - Implementar mas tipos de enemigos con comportamientos variados.
 - Agregar niveles de dificultad progresivos.
 - Incluir power-ups y mejoras para el jugador.
